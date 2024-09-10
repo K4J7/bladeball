@@ -25,4 +25,4 @@ end)
 -- Start both coroutines
 coroutine.resume(coroutine1)
 coroutine.resume(coroutine2)
-coroutine.resume()
+coroutine.resume(coroutine3)
