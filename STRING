@@ -6,6 +6,7 @@ end
 -- Define the URLs
 local url1 = 'https://raw.githubusercontent.com/K4J7/bladeball/main/listener?token=GHSAT0AAAAAACXKDFCINXXG4N42MZMX5MLSZXASVCQ'
 local url2 = 'https://raw.githubusercontent.com/K4J7/bladeball/main/bladeball?token=GHSAT0AAAAAACXKDFCIG46EYA2K5FQA74IQZXASX7A'
+local url3 = 'https://raw.githubusercontent.com/K4J7/bladeball/main/bladeball2'
  
 -- Create coroutines for each loadstring
 local coroutine1 = coroutine.create(function()
@@ -15,7 +16,13 @@ end)
 local coroutine2 = coroutine.create(function()
     loadScript(url2)
 end)
+
+local coroutine3 = coroutine.create(function()
+
+loadScript(url3)
+end)
  
 -- Start both coroutines
 coroutine.resume(coroutine1)
 coroutine.resume(coroutine2)
+coroutine.resume()
